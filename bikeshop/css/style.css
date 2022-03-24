@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* FONT COLOURS */
+  --site-colour: #ebe6e1;
+  --font-color-1: #ffffff;
+  --font-color-2: #5e5e5e;
+  --font-color-3: #703422;
+
+  /* FONTS */
+  --primary-font: "Amiri", serif;
+  --secondary-font: "Lato", sans-serif;
+  --third-font: "Signika Negative", sans-serif;
+
+  /* BUTTONS */
+  --button-background-1: #ffffff;
+  --button-hover-colour: #eeeeee;
+
+  /* OTHER */
+  --accent-color: rgb(19, 19, 19);
+  --accent-color-2: rgb(231, 231, 231);
+}
+
+body {
+  background-color: var(--site-colour);
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--font-color-3);
+  max-height: fit-content;
+  padding: 1.5rem 1rem 1rem 2rem;
+}
+
+main {
+  margin: 5rem 5% 5rem 2%;
+}
+
+/* FONT STYLING */
+
+h1 {
+  font-family: var(--primary-font);
+  color: var(--font-color-1);
+  margin: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+  color: var(--font-color-2);
+  letter-spacing: 2px;
+}
+
+#cardsOverview {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 7rem;
+  column-gap: 2rem;
+}
+
+#cardsOverview article {
+  max-width: 30%;
+  padding: 0.5rem;
+  background-color: var(--font-color-1);
+}
+
+article h2 {
+  font-family: var(--primary-font);
+  color: var(--font-color-2);
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+article .bikeBrand {
+  font-family: var(--secondary-font);
+  color: var(--font-color-2);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+article img {
+  max-width: 100%;
+}
+
+button {
+  background-color: var(--button-background-1);
+  border-radius: 0;
+  border: solid var(--font-color-3);
+  color: var(--font-color-3);
+  font-family: var(--third-font);
+  font-weight: 300;
+  font-size: 1.5em;
+  min-height: fit-content;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--button-hover-colour);
+  /* animation-duration: 1; */
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+#productOverviewTag {
+  max-height: fit-content;
+  max-width: fit-content;
+  background-color: var(--accent-color);
+  padding: 0.4rem 1rem 0.4rem 1rem;
+}
+
+#productOverviewTag p {
+  font-family: var(--third-font);
+  font-size: 1.5em;
+  margin: 0;
+  color: var(--font-color-1);
+  font-weight: 600;
+}
+
+#productDetails {
+  border: var(--accent-color-2) solid 1px;
+}
+
+#productDetails p {
+  border-bottom: var(--accent-color-2) solid 1px;
+  margin: 1.5rem 0 0 1rem;
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-weight: 400;
+}
+
+#productDetails p span {
+  font-family: var(--primary-font);
+  color: black;
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#productDetails a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 0.8rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
