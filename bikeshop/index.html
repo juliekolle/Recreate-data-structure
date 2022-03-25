@@ -14,79 +14,41 @@
     <main>
       <div id="productOverviewTag"><p>· BIKE STOCK ·</p></div>
 
-      <p>
+      <p class="brandList">
         BRANDS WE CARRY - <span>Linus</span> / <span>Brompton</span> /
         <span>Christiania</span> / <span>State</span>
       </p>
       <div id="cardsOverview">
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
-        <article>
-          <img src="img/bike1.png" alt="bike image" />
-          <p class="bikeBrand">STATE</p>
-          <h2 class="bikeName">WARHAWK</h2>
-          <div id="productDetails">
-            <p class="bikePrice">Price - <span>€579</span></p>
-            <p class="bikeColours">Colours - <span>N/A</span></p>
-            <p class="bikeStock">In Stock - <span>1</span></p>
-            <a href="productPage.html"><button>FULL SPECS</button> </a>
-          </div>
-        </article>
+        <template id="bikeTemplate">
+          <article>
+            <img src="img/bike1.png" alt="bike image" />
+            <p class="bikeBrand">STATE</p>
+            <h2 class="bikeName">WARHAWK</h2>
+            <div id="productDetails">
+              <div class="priceArea">
+                <p>Price - <span class="bikePrice">€579</span></p>
+              </div>
+              <div class="colorArea">
+                <p>Colours -</p>
+                <div class="colorAreaSmall">
+                  <div class="colorSquare1"></div>
+                  <div class="colorSquare2"></div>
+                  <div class="colorSquare3"></div>
+                  <div class="colorSquare4"></div>
+                  <div class="colorSquare5"></div>
+                  <div class="colorSquare6"></div>
+                </div>
+              </div>
+              <div class="priceArea">
+                <p>In Stock - <span class="bikeStock">1</span></p>
+              </div>
+              <a href="productPage.html"><button>FULL SPECS</button></a>
+            </div>
+          </article>
+        </template>
       </div>
     </main>
     <footer></footer>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
